@@ -1,6 +1,7 @@
 package com.loc.newsapp
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,6 +19,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Setting Our Splash Screen
         super.onCreate(savedInstanceState)
+        // hiding actionBar
+        actionBar?.hide()
 
         installSplashScreen()
         setContent {
